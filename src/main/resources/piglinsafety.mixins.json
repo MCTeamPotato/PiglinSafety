@@ -2,8 +2,7 @@
   "required": true,
   "minVersion": "0.8",
   "package": "com.teampotato.piglinsafety.mixin",
-  "compatibilityLevel": "JAVA_8",
-  "refmap": "piglinsafety.refmap.json",
+  "compatibilityLevel": "JAVA_17",
   "injectors": {
     "defaultRequire": 1
   },

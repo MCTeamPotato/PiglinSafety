@@ -1,8 +1,8 @@
 package com.teampotato.piglinsafety;
 
-import net.minecraftforge.fml.common.Mod;
+import net.fabricmc.api.ModInitializer;
 
-@Mod(PiglinSafety.ID)
-public class PiglinSafety {
-    public static final String ID = "piglinsafety";
+public class PiglinSafety implements ModInitializer {
+	@Override
+	public void onInitialize() {}
 }

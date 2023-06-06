@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "piglinsafety",
+  "version": "${version}",
+
+  "name": "PiglinSafety",
+  "description": "",
+  "authors": [
+    "TeamPotato"
+  ],
+  "contact": {
+    "homepage": "",
+    "sources": ""
+  },
+
+  "license": "LGPL-v2.1",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.teampotato.piglinsafety.PiglinSafety"
+    ]
+  },
+  "mixins": [
+    "piglinsafety.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": "*",
+    "fabric-api": "*",
+    "minecraft": "*",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
