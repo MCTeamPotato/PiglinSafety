@@ -1,14 +1,14 @@
 package com.teampotato.piglinsafety.mixin;
 
-import net.minecraft.entity.Entity;
-import net.minecraft.entity.EntityType;
-import net.minecraft.entity.monster.piglin.PiglinEntity;
-import net.minecraft.world.World;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.monster.piglin.Piglin;
+import net.minecraft.world.level.Level;
 import org.spongepowered.asm.mixin.Mixin;
 
-@Mixin(PiglinEntity.class)
+@Mixin(Piglin.class)
 public abstract class MixinPiglinEntity extends Entity {
-    public MixinPiglinEntity(EntityType<?> pType, World pLevel) {
+    public MixinPiglinEntity(EntityType<?> pType, Level pLevel) {
         super(pType, pLevel);
     }
 
