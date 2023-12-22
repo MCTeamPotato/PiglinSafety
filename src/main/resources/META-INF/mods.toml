@@ -1,12 +1,19 @@
-modLoader="javafml"
-loaderVersion="[36,)"
-license="LGPL-v2.1"
+modLoader = "javafml"
+loaderVersion = "[36,)"
+license = "LGPL-v3"
 
 [[mods]]
-modId="piglinsafety"
-version="${file.jarVersion}"
-displayName="PiglinSafety"
-authors="Team Potato"
-description='''
-
+modId = "piglinsafety"
+version = "${version}"
+displayName = "PiglinSafety"
+authors = "TeamPotato"
+description = '''
+A Minecraft Mod.
 '''
+
+[[dependencies.piglinsafety]]
+modId = "forge"
+mandatory = true
+versionRange = "[36,)"
+ordering = "NONE"
+side = "BOTH"

@@ -1,14 +1,13 @@
 {
   "required": true,
-  "minVersion": "0.8",
   "package": "com.teampotato.piglinsafety.mixin",
   "compatibilityLevel": "JAVA_8",
-  "refmap": "piglinsafety.refmap.json",
+  "minVersion": "0.8",
   "injectors": {
     "defaultRequire": 1
   },
   "mixins": [
-    "MixinPiglinBruteEntity",
-    "MixinPiglinEntity"
+    "MixinEntity",
+    "MixinPiglins"
   ]
 }
