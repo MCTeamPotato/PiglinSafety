@@ -1,0 +1,27 @@
+{
+	"schemaVersion": 1,
+	"id": "piglinsafety",
+	"version": "${version}",
+	"name": "PiglinSafety",
+	"description": "A Minecraft Mod",
+	"authors": [
+		"TeamPotato"
+	],
+	"contact": {
+		"homepage": "",
+		"sources": ""
+	},
+	"license": "LGPL-v3",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.teampotato.piglinsafety.PiglinSafety"
+		]
+	},
+	"mixins": [
+		"piglinsafety.mixins.json"
+	],
+	"depends": {
+		"minecraft": "*"
+	}
+}

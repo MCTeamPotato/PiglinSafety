@@ -1,8 +1,13 @@
 package com.teampotato.piglinsafety;
 
-import net.minecraftforge.fml.common.Mod;
+import net.fabricmc.api.ModInitializer;
 
-@Mod(PiglinSafety.MOD_ID)
-public class PiglinSafety {
-    public static final String MOD_ID = "piglinsafety";
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+public class PiglinSafety implements ModInitializer {
+    public static final Logger LOGGER = LoggerFactory.getLogger(PiglinSafety.class);
+
+	@Override
+	public void onInitialize() {}
 }

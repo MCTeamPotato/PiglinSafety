@@ -2,7 +2,7 @@ package com.teampotato.piglinsafety;
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
-import net.minecraftforge.fml.loading.FMLPaths;
+import net.fabricmc.loader.api.FabricLoader;
 import org.apache.logging.log4j.LogManager;
 import org.objectweb.asm.tree.ClassNode;
 import org.spongepowered.asm.mixin.extensibility.IMixinConfigPlugin;
@@ -17,7 +17,7 @@ public class ConfigSetup implements IMixinConfigPlugin {
     private static boolean piglin, hoglin, piglinBrute;
 
     public ConfigSetup() {
-        File file = FMLPaths.CONFIGDIR.get().resolve("piglinsafety.json").toFile();
+        File file = FabricLoader.getInstance().getConfigDir().resolve("piglinsafety.json").toFile();
         if (!file.exists()) {
             try {
                 FileWriter writer = writeFile(file);
@@ -29,7 +29,7 @@ public class ConfigSetup implements IMixinConfigPlugin {
 
         try {
             BufferedReader reader = new BufferedReader(new FileReader(file));
-            JsonObject config = new JsonParser().parse(reader).getAsJsonObject();
+            JsonObject config = JsonParser.parseReader(reader).getAsJsonObject();
             piglin = config.get("Piglin").getAsBoolean();
             hoglin = config.get("Hoglin").getAsBoolean();
             piglinBrute = config.get("PiglinBrute").getAsBoolean();
