@@ -1,6 +1,7 @@
 {
   "required": true,
   "package": "com.teampotato.piglinsafety.mixin",
+  "plugin": "com.teampotato.piglinsafety.ConfigSetup",
   "compatibilityLevel": "JAVA_8",
   "minVersion": "0.8",
   "injectors": {
@@ -8,6 +9,8 @@
   },
   "mixins": [
     "MixinEntity",
-    "MixinPiglins"
+    "MixinHoglin",
+    "MixinPiglin",
+    "MixinPiglinBrute"
   ]
 }
